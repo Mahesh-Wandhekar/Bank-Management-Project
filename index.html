@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Management System</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .jumbotron {
+      background-color: #007bff;
+      color: #fff;
+      padding: 100px 25px;
+      margin-bottom: 0;
+    }
+    .feature-box {
+      border: 1px solid #007bff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+    .feature-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 15px 0px rgba(0, 123, 255, 0.5);
+    }
+    .feature-box h3 {
+      color: #007bff;
+    }
+	 .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .footer p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="jumbotron text-center">
+    <h1>Welcome to Bank Management System</h1>
+    <p>A robust system to manage your banking operations efficiently.</p>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="feature-box text-center">
+          <i class="fas fa-user fa-4x mb-4"></i>
+          <h3>Customer Services</h3>
+          <p>Manage customer information, accounts, and transactions.</p>
+          <button class='btn btn-primary'><a href='coustmerlogin.html' class='text-white'>Account Enquiry</a></button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box text-center">
+          <i class="fas fa-chart-line fa-4x mb-4"></i>
+          <h3>Analytics</h3>
+          <p>Track banking trends, generate reports, and gain insights.</p>
+          <button class='btn btn-primary'><a href='bank-analytics.html' class='text-white'>Bank Analaytices</a></button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box text-center">
+          <i class="fas fa-cogs fa-4x mb-4"></i>
+          <h3>Administration</h3>
+          <p>Administer user roles, permissions, and system settings.</p>
+          <button class='btn btn-primary'><a href='login.html' class='text-white'>Admin Login</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Bank Management System. All rights reserved.</p>
+    </div>
+  </footer>
+   
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Management System - Admin Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 250px;
+      background-color: #343a40;
+      padding-top: 60px;
+    }
+    .sidebar h2 {
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover {
+      background-color: #6c757d !important;
+    }
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h2><span class='bi bi-person-fill'>Admin Dashboard</h2>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link active" href="newadmin.html"><i class="fas fa-user mr-2"></i>Create New Admin</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="coustmerlistservlet"><i class="fas fa-users mr-2"></i>Coustmer List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="createnewaccount.html"><i class="fas fa-user mr-2"></i>New Account</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="deposit.html"><i class="fas fa-user mr-2"></i>Deposite Ammount</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="withdraw.html"><i class="fas fa-user mr-2"></i>Withdraw Ammount</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="balances.html"><i class="fas fa-user mr-2"></i>Balances Enquiry</a>
+    </li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user mr-2"></i>Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h2>Welcome, Admin!</h2>
+    <p>This is your dashboard. You can manage users, view analytics, and change settings from here.</p>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

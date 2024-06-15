@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	rel="stylesheet">
+<title>Registration Form</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 50%;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	text-align: center;
+	color: #333;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="password"]
+	{
+	width: 100%;
+	padding: 10px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-group:last-child {
+	margin-bottom: 0;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.terms {
+	margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+	<div class="container">
+		<h2 class='text-dark'>
+			<span class='bi bi-person-fill'></span>Admin Login
+		</h2>
+		<form action="loginservlet" method="post">
+			<div class="form-group">
+				<label for="email">Email:</label> <input type="email" id="email"
+					name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="password">Password:</label> <input type="password"
+					id="password" name="password" required>
+			</div>
+
+			<center>
+				<input class="btn btn-primary  mb-3 w-100" type="submit"
+					value="login"> <input class="btn btn-danger w-100 mb-3"
+					type="reset" value="Cancle">
+			</center>
+		</form>
+		<a href="index.html">Back Here</a>
+	</div>
+
+</body>
+</html>
